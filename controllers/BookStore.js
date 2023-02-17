@@ -21,5 +21,22 @@ const addBook = async(req, res)=>{
     }
 }
 
+const updateBook = async (req, res) => {
+    const books = await BookStore.findById(req.params.id);
+    Object.assign(books, req.body);
+    books.save();
+    res.status(201).json({ books });
 
-module.exports = {getAllBooks, addBook}
+    // res.send({ data: books });
+}
+
+const deleteBook = async (req, res) => {
+    try {
+        const bookDb = BookStore.deleteOne({ username: req.params.id });
+        res.send("done:  ");
+    } catch {
+        res.status(404).send({ error: "Book is not found! " });
+    }
+}
+
+module.exports = {getAllBooks, addBook, updateBook, deleteBook}
