@@ -24,7 +24,7 @@ const addBook = async(req, res)=>{
 
 const getBook = async (req, res, next)=>{
     const{id:bookId} = req.params
-    const book = await Task.findOne({_id: bookId})
+    const book = await BookStore.findOne({_id: bookId})
     if (!book) {
         res.status(200).json({msg: `No book with id ${bookId}`})
     }
@@ -34,7 +34,7 @@ const getBook = async (req, res, next)=>{
 
 const deleteBook = async (req, res)=>{
     const{id:bookId} = req.params
-    const book = await Task.findByIdAndDelete({_id:bookId})
+    const book = await BookStore.findByIdAndDelete({_id:bookId})
     if (!book) {
         res.status(200).json({msg: `No book with id ${bookId}`})
     }
@@ -43,7 +43,7 @@ const deleteBook = async (req, res)=>{
 
 const updateBook =async (req, res)=>{
     const {id:bookId} = req.params;
-    const task = await Task.findOneAndUpdate({_id:bookId},req.body,{new:true, runValidators: true})
+    const task = await BookStore.findOneAndUpdate({_id:bookId},req.body,{new:true, runValidators: true})
     if (!task) {
         res.status(200).json({msg: `No book with id ${bookId} found`})
     }
