@@ -7,7 +7,7 @@ const BookStore = new mongoose.Schema({
         minlength:3,
         maxlength:[80, 'Author cannot be more than 20 characters']
     }, 
-    Title:{
+    title:{
         type: String,
         required: [true,'Must provide title'],
         trim:true,
