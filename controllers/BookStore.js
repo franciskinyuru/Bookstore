@@ -32,11 +32,20 @@ const updateBook = async (req, res) => {
 
 const deleteBook = async (req, res) => {
     try {
-        const bookDb = BookStore.deleteOne({ username: req.params.id });
-        res.send("done:  ");
+        const bookDb = BookStore.deleteOne({ _id: req.params.id });
+        res.status(204).json({msg:"Deleted successfully"});
     } catch {
         res.status(404).send({ error: "Book is not found! " });
     }
 }
 
-module.exports = {getAllBooks, addBook, updateBook, deleteBook}
+const singleBook = async (req, res) => {
+    try {
+        const bookDb = BookStore.findOne({ _id: req.params.id });
+        res.status(204).json({bookDb});
+    } catch {
+        res.status(404).send({ error: "Book is not found! " });
+    }
+}
+
+module.exports = {getAllBooks, addBook, updateBook, deleteBook, singleBook}
