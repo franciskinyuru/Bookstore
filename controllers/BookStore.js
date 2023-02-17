@@ -45,12 +45,12 @@ const deleteBook = async (req, res) => {
 }
 
 const singleBook = async (req, res) => {
-    try {
-        const bookDb = BookStore.findOne({ _id: req.params.id });
-        res.status(204).json({bookDb});
-    } catch {
-        res.status(404).send({ error: "Book is not found! " });
+    const{id:bookId} = req.params
+    const book = await BookStore.findOne({_id:bookId})
+    if (!book) {
+        res.status(200).json({msg: `No book with id ${bookId}`})
     }
+    res.status(200).json({ book })
 }
 
 module.exports = {getAllBooks, addBook, updateBook, deleteBook, singleBook}
