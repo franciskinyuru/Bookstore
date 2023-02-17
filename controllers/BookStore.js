@@ -32,16 +32,12 @@ const updateBook = async (req, res) => {
 
 const deleteBook = async (req, res) => {
     try {
-        const {id:bookID} = req.params
-        const book = await BookStore.findByIdAndDelete({ _id:bookID });
-        console.log(book);
-        if (book) {
-            res.status(200).json({book})
+        const{id:bookId} = req.params
+        const book = await BookStore.findByIdAndDelete({_id:bookId})
+        if (!book) {
+            res.status(200).json({msg: `No book with id ${bookId}`})
         }
-        else{
-            res.status(500).json({msg:"Failed to delete book"})
-        }
-        res.status(204).json({msg:"Deleted successfully"});
+        res.status(200).json({msg:"Book Deleted Successfully" })
 
     } catch {
         res.status(404).send({ error: "Book is not found! " });
