@@ -4,7 +4,7 @@ const {getAllBooks,addBook,updateBook,deleteBook, singleBook} = require('../cont
 router.post("/",addBook)
 router.get("/",getAllBooks)
 router.delete("/:id",deleteBook)
-router.patch(":id",updateBook)
+router.patch("/:id",updateBook)
 router.get("/:id",singleBook)
 
 module.exports = router
