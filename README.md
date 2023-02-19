@@ -4,10 +4,10 @@
 
 #### Contributors
 
-- Francis Warui Kinyuru
-- James Maina Thuo
-- Esther Njoki Mwangi
-- Job Mwaniki
+- Francis Warui Kinyuru - MongoDB configuration including the collection schema, connection string
+- James Maina Thuo - Contoller for create book entry, get all books, getsinglebook, update a book, delete a book
+- Esther Njoki Mwangi - Creating routes.
+- Job Mwaniki - main.js - entry point to Application and creating Readme
 
 February, 2023
 
@@ -52,8 +52,4 @@ SOFTWARE.\*
 
 ## Copyright
 
-<<<<<<< HEAD
-copyright (c) {2023}
-=======
 Copyright (c) {2023}
->>>>>>> 2834987dc57da61a6e4f50435eacc7eab65fa253
