@@ -51,4 +51,4 @@ SOFTWARE.\*
 
 ## Copyright
 
-Copyright (c) {2023}
+right (c) {2023}
