@@ -5,9 +5,10 @@
 #### Contributors
 
 - Francis Warui Kinyuru
-- James Maina Thuo-
-- Esther Njoki Mwangi-
-- Job Mwaniki,
+- James Maina Thuo
+- Esther Njoki Mwangi
+- Job Mwaniki
+
 February, 2023
 
 ## website/Live Site
