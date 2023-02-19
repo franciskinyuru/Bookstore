@@ -27,11 +27,8 @@ NodeJS.
 MongoDB.
 Render
 
-
-
 ## Support and contact details
-
-
+For more information or Support liase with any contributor of listed for this project.
 ### License Information
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
