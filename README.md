@@ -52,4 +52,4 @@ SOFTWARE.\*
 
 ## Copyright
 
-Copyright (c) {2023}
+Copyright &copy 2023
