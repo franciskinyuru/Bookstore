@@ -1,6 +1,6 @@
-# Project Name.
+# Project Name
 
-Bookstore API 
+## Bookstore API 
 
 #### Contributors
 
@@ -11,7 +11,7 @@ Bookstore API
 February, 2023
 
 ## website/Live Site
-live website is availabe (here)[https://bookstore-xykr.onrender.com/]
+live website is availabe [here](https://bookstore-xykr.onrender.com/)
 ## Project Description
 The project entails having an API to Create a book entry, update an existing book, Deleting a book entry and querying a single book.
 ## Project Setup Instruction
