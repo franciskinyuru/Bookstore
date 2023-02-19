@@ -20,10 +20,12 @@ We need a render account to deploy our application.
 We need NodeJS code to be deployed.
 
 ## Known Bugs
-
-
+No known bugs found
 
 ## Technologies Used
+NodeJS.
+MongoDB.
+Render
 
 
 
