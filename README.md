@@ -13,9 +13,11 @@ February, 2023
 ## website/Live Site
 live website is availabe (here)[https://bookstore-xykr.onrender.com/]
 ## Project Description
-
+The project entails having an API to Create a book entry, update an existing book, Deleting a book entry and querying a single book.
 ## Project Setup Instruction
-
+A connection to MongoDB is required
+We need a render account to deploy our application.
+We need NodeJS code to be deployed.
 
 ## Known Bugs
 
