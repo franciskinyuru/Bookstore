@@ -12,7 +12,7 @@
 February, 2023
 
 ## website/Live Site
-live website/API Collection is availabe [here](https://api.postman.com/collections/11011429-fb215727-aa29-46b9-9c48-bb1b31cc8475?access_key=PMAT-01GSG03TFE5SC9A76F3EFJ4F5R)
+live website/API Collection is availabe [here](https://bookstore-xykr.onrender.com/)
 ## Project Description
 The project entails having an API to Create a book entry, update an existing book, Deleting a book entry and querying a single book.
 ## Project Setup Instruction
